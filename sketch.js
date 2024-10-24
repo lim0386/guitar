@@ -17,6 +17,11 @@ function preload(){
 
 function setup() {
   createCanvas(400, 400);
+  console.log("g");
+    audioPlayerB.play();
+    audioPlayerD.play();
+    audioPlayerV.play();
+    audioPlayerM.play();
   // audioPlayerB = loadSound("b.mp3");
   // audioPlayerD = loadSound("d.mp3");
   // audioPlayerV = loadSound("v.mp3");
