@@ -7,6 +7,8 @@ let bpmM;
 let totalTime;
 let mouseTime1, mouseTime2;
 let bpmCal = 0;
+
+let button;
 // let bpmFinal;
 function preload(){
   audioPlayerB = loadSound("b.mp3");
@@ -17,11 +19,8 @@ function preload(){
 
 function setup() {
   createCanvas(400, 400);
-  console.log("g");
-    audioPlayerB.play();
-    audioPlayerD.play();
-    audioPlayerV.play();
-    audioPlayerM.play();
+  button = createButton("QWER");
+  button.mouseClicked(qwer);
   // audioPlayerB = loadSound("b.mp3");
   // audioPlayerD = loadSound("d.mp3");
   // audioPlayerV = loadSound("v.mp3");
@@ -126,4 +125,11 @@ function mouseClicked() {
   if(bpmCal > 1){
     bpmCal = 0;
   }
+}
+
+function qwer(){
+  audioPlayerB.play();
+    audioPlayerD.play();
+    audioPlayerV.play();
+    audioPlayerM.play();
 }
